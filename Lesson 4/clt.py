@@ -1,18 +1,13 @@
 """
 **You should learn Lesson 1.5 and preferably 3.5 before check this script!**
 
-The use of decorator here may be confusing, but it is an elegant way to implement
-interactive widgets.
+Provides interactive statistical visualizations using uniform random variables
+and associated normal distributions.
 
-This script provides an interactive visualization of the relationship between
-the histogram of uniformly distributed random variables and the normal
-distribution of their mean values. It allows users to dynamically adjust the
-number of uniform random variables and view how the overall distribution
-changes.
-
-Functions:
-    - make_plot(n: int): Generates and displays the plots comparing the uniform
-      random variables' histogram and the corresponding normal distribution.
+This module allows users to generate a histogram comparing uniform random
+variables and their associated normal distributions, along with an interactive
+widget for parameter adjustment. The visualization includes multiple subplots
+and is designed for dynamic interaction.
 """
 
 
@@ -22,7 +17,6 @@ from scipy.stats import norm
 from matplotlib import pyplot as plt
 
 
-@interact(n=(1, 30, 1))
 def make_plot(n: int = 1):
     """
     Generates and displays plots comparing the histogram of uniform random variables
@@ -65,3 +59,19 @@ def make_plot(n: int = 1):
 
     plt.tight_layout()
     plt.show()
+
+
+def show_plot():
+    """
+    Displays an interactive plot control widget.
+
+    This function uses the `interact` method to create an interactive widget for
+    adjusting parameters of the `make_plot` function. The widget allows users to
+    adjust the number parameter (`n`) within a specified range. The range and step
+    size for the parameter are provided explicitly, enabling dynamic interaction
+    with the plot.
+
+    :return: The interactive widget instance created by `interact`. It enables
+        users to manipulate the given parameter for real-time updates to the plot.
+    """
+    return interact(make_plot, n=(1, 30, 1))
