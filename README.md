@@ -1,6 +1,6 @@
-# Chem 18: Introductory Data Science for Future Chemists
+# Chem 18: Introductory Data Science for Modern Chemists
 
-Welcome to Chem 18: Introductory Data Science for Future Chemists!
+Welcome to Chem 18: Introductory Data Science for Modern Chemists!
 
 In this course, you will learn how to use modern computational tools – particularly the Python programming language – to process, analyze, and display data. As chemists, data is at the heart of your work: it supports your hypotheses, validates your findings, and helps you communicate your results effectively. Being able to process and visualize data clearly is an essential skill for the future of chemical research.
 
