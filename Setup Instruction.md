@@ -72,14 +72,14 @@ By the way, for any button you are interested in, hover your cursor over it to s
 
 When selecting a cell, its upper right corner appears some small widgets. Each corresponds to a cell operation listed below.
 
-| Widget                                             | Description                          | Default Shortcut                                 |
-|----------------------------------------------------|--------------------------------------|--------------------------------------------------|
-| ![Duplicated cell](Lesson 0/assets/cell_duplicate.png)      | Duplicate the current cell           | None                                             |
-| ![Move cell up](Lesson 0/assets/cell_move_up.png)           | Move the current cell up             | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Up</kbd>   |
-| ![Move cell down](Lesson 0/assets/cell_move_down.png)       | Move the current cell down           | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Down</kbd> |
-| ![Insert cell above](Lesson 0/assets/cell_insert_above.png) | Insert a cell above the current cell | <kbd>A</kbd>                                     |
-| ![Insert cell below](Lesson 0/assets/cell_insert_below.png) | Insert a cell below the current cell | <kbd>B</kbd>                                     |
-| ![Delete cell](Lesson 0/assets/cell_delete.png)             | Delete the current cell              | <kbd>D</kbd>, <kbd>D</kbd> (double press)        |
+| Widget                                                        | Description                          | Default Shortcut                                 |
+|---------------------------------------------------------------|--------------------------------------|--------------------------------------------------|
+| ![Duplicated cell](Lesson%200/assets/cell_duplicate.png)      | Duplicate the current cell           | None                                             |
+| ![Move cell up](Lesson%200/assets/cell_move_up.png)           | Move the current cell up             | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Up</kbd>   |
+| ![Move cell down](Lesson%200/assets/cell_move_down.png)       | Move the current cell down           | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Down</kbd> |
+| ![Insert cell above](Lesson%200/assets/cell_insert_above.png) | Insert a cell above the current cell | <kbd>A</kbd>                                     |
+| ![Insert cell below](Lesson%200/assets/cell_insert_below.png) | Insert a cell below the current cell | <kbd>B</kbd>                                     |
+| ![Delete cell](Lesson%200/assets/cell_delete.png)             | Delete the current cell              | <kbd>D</kbd>, <kbd>D</kbd> (double press)        |
 
 Besides keyboard shortcuts or buttons, you can also drag and drop the left side of a cell to reorder them. Furthermore, click the left side of cells while pressing <kbd>Shift</kbd> to select multiple cells, and then you can move them together.
 
