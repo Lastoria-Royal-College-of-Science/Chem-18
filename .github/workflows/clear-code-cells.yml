@@ -1,0 +1,22 @@
+on: push
+
+jobs:
+  clear-code-cells:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Clear code cells
+        run: python .github/clear_code_cells.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Chem 18 contents {{ github.sha }}
+          path: |
+            Lesson */
+            requirement.txt
+            README.md
+            Setup Instruction.md
