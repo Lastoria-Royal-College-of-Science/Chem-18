@@ -33,7 +33,7 @@ jobs:
         with:
           name: Chem 18 contents ${{ github.sha }}
       - run: ls -aR
-      - run: zip -r Chem 18 (${{ github.ref_name }}).zip ./*
+      - run: zip -r 'Chem 18 (${{ github.ref_name }}).zip' ./*
       - name: Create release
         uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
