@@ -1,4 +1,5 @@
 on: push
+name: CI
 
 jobs:
   clear-code-cells:
@@ -11,6 +12,8 @@ jobs:
           python-version: '3.x'
       - name: Install dependencies
         run: pip install -r requirements.txt
+        with:
+          cache: 'pip'
       - name: Clear code cells
         run: python .github/clear_code_cells.py
       - uses: actions/upload-artifact@v4
@@ -21,3 +24,20 @@ jobs:
             requirement.txt
             README.md
             Setup Instruction.md
+
+  create-release:
+    name: Create release
+    needs: clear-code-cells
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v5
+        with:
+          name: Chem 18 contents ${{ github.sha }}
+      - run: ls -aR
+      - run: zip -r Chem 18 (${{ github.ref_name }}).zip ./*
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
+        with:
+          files: |
+            Chem 18 (${{ github.ref_name }}).zip
