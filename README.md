@@ -6,6 +6,6 @@ In this course, you will learn how to use modern computational tools – particu
 
 This course is designed as a self-paced, interactive tutorial. You will work through these Jupyter Notebooks on your own, learning by doing. Many of the concepts will feel familiar, and you'll discover that data processing is not as difficult as it may first seem. Our goal is to make the learning process efficient for both you and us, while giving you practical skills you can apply immediately in your studies and research.
 
-中文版请移步[安装教程](https://github.com/Lastoria-Royal-College-of-Science/Chem-18/blob/main/L10n/Chinese/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)～
-
 Ensure you have set up your environment as described in the [setup instruction](Setup%20Instruction.md).
+
+中文版请移步[安装教程](https://github.com/Lastoria-Royal-College-of-Science/Chem-18/blob/main/L10n/Chinese/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)～
