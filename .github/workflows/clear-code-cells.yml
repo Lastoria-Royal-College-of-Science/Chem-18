@@ -2,6 +2,7 @@ on: push
 
 jobs:
   clear-code-cells:
+    name: Clear code cells
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -14,7 +15,7 @@ jobs:
         run: python .github/clear_code_cells.py
       - uses: actions/upload-artifact@v4
         with:
-          name: Chem 18 contents {{ github.sha }}
+          name: Chem 18 contents ${{ github.sha }}
           path: |
             Lesson */
             requirement.txt
