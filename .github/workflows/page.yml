@@ -1,5 +1,9 @@
-on: push
 name: GitHub Page
+
+on:
+  push:
+    branches:
+      - main
 
 permissions:
   contents: read
