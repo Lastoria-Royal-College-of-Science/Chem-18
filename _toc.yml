@@ -1,0 +1,11 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: 'Lesson 0/Introduction'
+chapters:
+  - file: 'Lesson 1/Basics of Python Programming'
+  - file: 'Lesson 1-extra/More about Python Programming'
+  - file: 'Lesson 2/NumPy Preliminaries'
+  - file: 'Lesson 3/Data Visualization'
+  - file: 'Lesson 4/Real World Data'
