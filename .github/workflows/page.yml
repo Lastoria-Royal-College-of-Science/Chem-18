@@ -1,6 +1,11 @@
 on: push
 name: GitHub Page
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     name: Build site
