@@ -27,7 +27,7 @@ project:
         - file: 'Lesson 4-extra/Statistics with Python.ipynb'
     - title: Elective Lessons
       children:
-        - file: 'Lesson A/Symbolic Mathematics.ipynb'
+        - file: 'Lesson A1/Symbolic Mathematics (1).ipynb'
 site:
   template: book-theme
   options:
