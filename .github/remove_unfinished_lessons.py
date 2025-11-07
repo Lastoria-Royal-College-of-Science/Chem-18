@@ -3,7 +3,7 @@ from pathlib import Path
 import shutil
 
 
-def delete_unfinished_lessons(home: str, dry_run: bool = True):
+def remove_unfinished_lessons(home: str, dry_run: bool = True):
     for unfinished_placeholder in Path(home).glob('**/*.unfinished'):
         print(f'Found {unfinished_placeholder.parent}')
 
@@ -16,4 +16,4 @@ def delete_unfinished_lessons(home: str, dry_run: bool = True):
 
 if __name__ == '__main__':
     DRY_RUN = os.environ.get('DRY_RUN', 'true').lower() != 'false'
-    delete_unfinished_lessons('.', dry_run=DRY_RUN)
+    remove_unfinished_lessons('.', dry_run=DRY_RUN)
