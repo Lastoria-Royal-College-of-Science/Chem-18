@@ -31,6 +31,7 @@ jobs:
         with:
           name: Chem 18 contents ${{ github.sha }}
           path: |
+            L10n/
             Lesson */
             requirement.txt
             README.md
