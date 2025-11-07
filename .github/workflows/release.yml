@@ -2,6 +2,8 @@ name: Release
 
 on:
   push:
+    branches:
+      - main
     tags:
       - '*'
 
@@ -19,6 +21,12 @@ jobs:
         run: pip install -r requirements.txt
       - name: Clear code cells
         run: python .github/clear_code_cells.py
+        env:
+          DRY_RUN: false
+      - name: Remove unfinished lessons
+        run: python .github/remove_unfinished_lessons.py
+        env:
+          DRY_RUN: false
       - uses: actions/upload-artifact@v4
         with:
           name: Chem 18 contents ${{ github.sha }}
@@ -32,14 +40,13 @@ jobs:
     name: Create release
     needs: clear-code-cells
     runs-on: ubuntu-latest
-#    if: github.ref_type == 'tag'
+    if: github.ref_type == 'tag'
     permissions:
       contents: write
     steps:
       - uses: actions/download-artifact@v5
         with:
           name: Chem 18 contents ${{ github.sha }}
-#      - run: ls -aR
       - run: zip -r 'Chem 18 (${{ github.ref_name }}).zip' ./*
       - name: Create release
         uses: softprops/action-gh-release@v2
