@@ -22,6 +22,11 @@ jobs:
           cache: 'pip'
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Delete code cells
+        run: python .github/clear_code_cells.py
+        env:
+          DRY_RUN: false
+          DELETE: true
       - name: Build site
         run: jupyter book build --html
       - name: Upload GitHub Pages artifact

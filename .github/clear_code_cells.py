@@ -3,7 +3,7 @@ from pathlib import Path
 import nbformat
 
 
-def clear_code_cells(home: str, *exclude: str, dry_run: bool = True):
+def clear_code_cells(home: str, *exclude: str, dry_run: bool = True, delete: bool = False):
     for ipynb_path in Path(home).glob('*/*.ipynb'):
         if any(pattern in ipynb_path.parts for pattern in exclude):
             continue
@@ -18,11 +18,14 @@ def clear_code_cells(home: str, *exclude: str, dry_run: bool = True):
                 cell.source = ''
                 cell.outputs = []
                 cell.execution_count = None
+                if delete:
+                    nb.cells.remove(cell)
         nbformat.write(nb, ipynb_path)
         print(f'Cleared {ipynb_path}')
 
 
 if __name__ == '__main__':
     DRY_RUN = os.environ.get('DRY_RUN', 'true').lower() != 'false'
-    clear_code_cells('.', 'Lesson 0', dry_run=DRY_RUN)
-    clear_code_cells('L10n/Chinese', '第0课', dry_run=DRY_RUN)
+    DELETE = os.environ.get('DELETE', 'false').lower() == 'true'
+    clear_code_cells('.', 'Lesson 0', dry_run=DRY_RUN, delete=DELETE)
+    clear_code_cells('L10n/Chinese', '第0课', dry_run=DRY_RUN, delete=DELETE)
