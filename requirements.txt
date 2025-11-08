@@ -7,4 +7,4 @@ matplotlib~=3.10.6
 seaborn~=0.13.2
 ipywidgets~=8.1.5
 scikit-learn~=1.7.2
-jupyter-book~=2.0.0b3
+jupyter-book~=2.0.2
