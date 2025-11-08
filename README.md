@@ -12,6 +12,9 @@ Ensure you have set up your environment as described in the [setup instruction](
 
 中文版请移步[此处](https://github.com/Lastoria-Royal-College-of-Science/Chem-18/tree/main/L10n/Chinese)～
 
-目前汉化进度还很低，只有[第0课](https://github.com/Lastoria-Royal-College-of-Science/Chem-18/tree/main/L10n/Chinese/%E7%AC%AC0%E8%AF%BE)和[第1课](https://github.com/Lastoria-Royal-College-of-Science/Chem-18/tree/main/L10n/Chinese/%E7%AC%AC1%E8%AF%BE)做了完整的汉化。如果大家有愿意帮忙的可以来发邮件联系两位老师，之后可以以pull request的形式上传社区版的汉化哦～
+目前汉化正缺人手，如果大家有愿意帮忙的可以来发邮件联系两位老师，之后可以以 Pull Request 的形式上传社区版的汉化哦～已汉化的内容如下：
+- [第0课：简介](L10n/Chinese/第0课)
+- [第1课：Python编程基础](L10n/Chinese/第1课)
+- [第2课：NumPy入门](L10n/Chinese/第2课)
 
 关于如何对本项目做出贡献，可以移步[贡献指南](CONTRIBUTING.md)，我们会不断更新有关贡献的细则，所以大家也要多多关注喵( ´▽｀)
