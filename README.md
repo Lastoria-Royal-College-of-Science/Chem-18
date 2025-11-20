@@ -10,7 +10,7 @@ This course is designed as a self-paced, interactive tutorial. You will work thr
 
 Ensure you have set up your environment as described in the [setup instruction](Setup%20Instruction.md). If you still encounter any problem or want to contribute to the course, please see the [contributing guideline](CONTRIBUTING.md).
 
-It is **HIGHLY** recommended to download the dated zip file ([Chem.18.2025-11-07.zip](https://github.com/Lastoria-Royal-College-of-Science/Chem-18/releases/download/2025-11-07/Chem.18.2025-11-07.zip) or [Chem.18.2025-11-07.zh_CN.zip](https://github.com/Lastoria-Royal-College-of-Science/Chem-18/releases/download/2025-11-07/Chem.18.2025-11-07.zh_CN.zip), not the Source code) in the [Release](https://github.com/Lastoria-Royal-College-of-Science/Chem-18/releases/tag/2025-11-07) part, but **NOT** clone the whole repo! *The source code may contain partially filled code cells, which contradicts our idea that you should type and run the code **YOURSELF**.* Typing and running the code yourself can greatly improve your comprehension of course concepts ( ´▽｀)
+It is **HIGHLY** recommended to download the dated zip file in the [Release](https://github.com/Lastoria-Royal-College-of-Science/Chem-18/releases/tag/2025-11-07) part, but **NOT** clone the whole repo! *The source code may contain partially filled code cells, which contradicts our idea that you should type and run the code **YOURSELF**.* Typing and running the code yourself can greatly improve your comprehension of course concepts ( ´▽｀)
 
 ---
 
