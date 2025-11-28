@@ -13,13 +13,19 @@ def clear_code_cells(home: str, *exclude: str, dry_run: bool = True, delete: boo
             continue
 
         nb = nbformat.read(ipynb_path, as_version=4)
+
+        if delete:
+            nb.cells = [*filter(lambda cell: cell.cell_type != 'code', nb.cells)]
+            nbformat.write(nb, ipynb_path)
+            print(f'Deleted code cells of {ipynb_path}')
+            continue
+
         for cell in nb.cells:
-            if cell.cell_type == 'code':
-                cell.source = ''
-                cell.outputs = []
-                cell.execution_count = None
-                if delete:
-                    nb.cells.remove(cell)
+            if cell.cell_type != 'code':
+                continue
+            cell.source = ''
+            cell.outputs = []
+            cell.execution_count = None
         nbformat.write(nb, ipynb_path)
         print(f'Cleared {ipynb_path}')
 

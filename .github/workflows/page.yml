@@ -3,7 +3,7 @@ name: GitHub Page
 on:
   push:
     branches:
-      - main
+      - '*'
 
 permissions:
   contents: read
@@ -35,3 +35,4 @@ jobs:
           path: _build/html/
       - name: Deploy GitHub Pages site
         uses: actions/deploy-pages@v4
+        if: github.ref == 'refs/heads/main'
