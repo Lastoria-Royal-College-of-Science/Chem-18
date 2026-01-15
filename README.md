@@ -20,5 +20,6 @@ It is **HIGHLY** recommended to download the dated zip file in the [latest relea
 - [第0课：简介](L10n/Chinese/第0课)
 - [第1课：Python编程基础](L10n/Chinese/第1课)
 - [第2课：NumPy入门](L10n/Chinese/第2课)
+- [第3课：数据可视化](L10n/Chinese/第3课)
 
 关于如何对本项目做出贡献，可以移步[贡献指南](CONTRIBUTING.md)，我们会不断更新有关贡献的细则，所以大家也要多多关注喵( ´▽｀)
