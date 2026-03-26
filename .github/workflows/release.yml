@@ -33,7 +33,7 @@ jobs:
           path: |
             L10n/
             Lesson */
-            requirement.txt
+            requirements.txt
             README.md
             Setup Instruction.md
 
