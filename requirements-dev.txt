@@ -1,0 +1,3 @@
+jupyterlab~=4.4.7
+notebook~=7.4.5
+mystmd~=1.7.0
