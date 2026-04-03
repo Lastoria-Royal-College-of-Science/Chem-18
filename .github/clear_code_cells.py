@@ -13,6 +13,7 @@ def clear_code_cells(home: str, *exclude: str, dry_run: bool = True, delete: boo
             continue
 
         nb = nbformat.read(ipynb_path, as_version=4)
+        nb.cells.remove(nb.cells[0])
         for cell in nb.cells:
             if cell.cell_type == 'code':
                 cell.source = ''
