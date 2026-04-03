@@ -21,7 +21,9 @@ jobs:
           python-version: '3.x'
           cache: 'pip'
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
       - name: Delete code cells
         run: python .github/clear_code_cells.py
         env:
